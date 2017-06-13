@@ -1,5 +1,29 @@
 package students.registration;
 
-public class Registration extends Validation{
+import java.util.Scanner;
 
+import students.Student;
+import students.validation.Validation;
+
+public class Registration extends Validation{
+	private static int total_registered_students;
+	private Student students[];
+	private Student stu[];
+	
+	void get_data() {
+		Student student = new Student();
+		
+        
+        
+	}
+	
+	void register_student(Student s) {
+		boolean validation = fullValidation(s.getAge(), s.getEmail_id(), s.getPhone_no(), s.getAdhar_no());
+		if(validation) {
+			students[total_registered_students++] = s;
+		}
+		else {
+			System.out.println("Invalid Data. Student not registered");
+		}
+	}
 }

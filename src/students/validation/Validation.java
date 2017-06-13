@@ -41,7 +41,7 @@ public class Validation extends Student {
 		}
 	}
 
-	boolean fullValidation(int age, String email_id, String adhar_no, String phone_no) {
+	protected boolean fullValidation(int age, String email_id, String adhar_no, String phone_no) {
 		if (check_age(age) && check_email_id(email_id) && check_adhar_no(adhar_no) && check_phone_no(phone_no)) {
 			validation_pass = true;
 		} else {
