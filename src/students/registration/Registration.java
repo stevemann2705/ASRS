@@ -8,17 +8,14 @@ import students.validation.Validation;
 public class Registration extends Validation{
 	private static int total_registered_students;
 	private Student students[];
-	private Student stu[];
+	
 	
 	void get_data() {
-		Student student = new Student();
-		
-        
-        
+		//TO-DO Implementation
 	}
 	
 	public void register_student(Student s) {
-		boolean validation = fullValidation(s.getAge(), s.getEmail_id(), s.getPhone_no(), s.getAdhar_no());
+		boolean validation = fullValidation(s.getAge(), s.getEmail_id(), s.getAdhar_no(), s.getPhone_no());
 		if(validation) {
 			students[total_registered_students++] = s;
 		}
