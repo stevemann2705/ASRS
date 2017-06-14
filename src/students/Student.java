@@ -7,6 +7,14 @@ public class Student {
 	private String phone_no;
 	private String adhar_no;
 	
+	public Student() {
+		this.name = null;
+		this.age = 0;
+		this.email_id = null;
+		this.phone_no = null;
+		this.adhar_no = null;
+	}
+	
 	public Student(String name, int age, String email_id, String phone_no, String adhar_no){
 		this.name = name;
 		this.age = age;
