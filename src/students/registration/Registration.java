@@ -17,7 +17,7 @@ public class Registration extends Validation{
         
 	}
 	
-	void register_student(Student s) {
+	public void register_student(Student s) {
 		boolean validation = fullValidation(s.getAge(), s.getEmail_id(), s.getPhone_no(), s.getAdhar_no());
 		if(validation) {
 			students[total_registered_students++] = s;
