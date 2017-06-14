@@ -6,6 +6,16 @@ public class Student {
 	private String email_id;
 	private String phone_no;
 	private String adhar_no;
+	
+	public Student(String name, int age, String email_id, String phone_no, String adhar_no){
+		this.name = name;
+		this.age = age;
+		this.email_id = email_id;
+		this.phone_no = phone_no;
+		this.adhar_no = adhar_no;
+	}
+	
+	
 	public String getName() {
 		return name;
 	}
