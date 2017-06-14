@@ -7,7 +7,7 @@ import students.validation.Validation;
 
 public class Registration extends Validation{
 	private static int total_registered_students;
-	private Student students[];
+	private Student students[] = new Student[100];
 	
 	
 	void get_data() {
